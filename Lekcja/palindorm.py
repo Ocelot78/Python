@@ -1,7 +1,14 @@
-with open ('C:/Users/sala22/Desktop/Lekcja/dane.txt','r') as file:
-    dane = file.read().split()
-counter_add = 0
-for slowo in dane:
-    if len(slowo) % 2 == 1:
-        counter_add += 1
-print(f"Liczba słów o nieparzystej długości, {counter_add}")
+dane = open("dane.txt", "r")
+odp = open('zadanie4.txt','w')
+
+def palindrom_jest(dane):
+    return dane == dane[::-1]
+
+def znajdz_palindromy(dane, odp):
+    for linia in dane:
+        tekst = linia.strip()
+        if palindrom_jest(tekst):
+            odp.write(tekst + '\n')
+
+with open("dane.txt", "r") as dane, open("zadanie4.txt", "w") as odp:
+    znajdz_palindromy(dane, odp)
