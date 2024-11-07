@@ -1,0 +1,2 @@
+Liczba parzystych: 105
+Liczba nieparzystych: 95
