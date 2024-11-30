@@ -1,0 +1,3 @@
+a)Wielokrotnoœci:  10
+b)Wzglednie pierwsze i nww =1: 584
+c)Suma cyfr: 48
